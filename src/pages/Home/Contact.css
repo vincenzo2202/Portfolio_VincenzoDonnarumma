@@ -1,0 +1,67 @@
+
+.contact{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    background-color: #1B1F24;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.message{
+    font-size: 3em;
+    margin-bottom: 1em;
+}
+
+.box-contact{
+    display: flex;   
+    height: 20em;
+    width: 60em ; 
+}
+
+.left-contact{
+    color: black;
+    width: 25em;
+    background-color: white; 
+    padding: 1em;
+    text-align: left;
+    font-size: 1.2em;
+
+}
+
+.right-contact{
+    color: rgb(255, 255, 255);
+    width: 25em;
+    background-color: black; 
+    padding: 1em;
+    text-align: left;
+    font-size: 1.2em; 
+}
+.contact-title{
+    color: black; 
+    font-size: 3em;
+    display: flex; 
+    justify-content: flex-start; 
+    margin-bottom: 0.5em;
+    font-weight:700;
+
+}
+
+.seguir-title{
+    color: rgb(255, 255, 255); 
+    font-size: 3em;
+    display: flex; 
+    justify-content: flex-start; 
+    font-weight:600;
+}
+
+.email,
+.phone{
+    font-size: 1.1em;
+    margin-bottom: 1em;
+    margin-left: 1em;
+    user-select: text;
+}

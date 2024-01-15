@@ -6,6 +6,8 @@ import { LeftOutlined, RightOutlined } from "@ant-design/icons";
 import './Home.css';
 import './About.css';
 import './Project.css';
+import './Contact.css';
+
 import image from '../../assets/vin1.png';
 
 export const Home = () => {
@@ -73,12 +75,25 @@ export const Home = () => {
                 </div>
                 <div className='see-more'>
                     <div class="shadow__btn">
-                       VER TODOS
+                        VER TODOS
                     </div>
                 </div>
-
             </div>
             <div className='contact'>
+                <div className='message'>¡Hagamos algo genial!</div>
+                <div className='box-contact'>
+                    <div className='left-contact'>
+                        <div className='contact-title'>CONTACTO</div>
+                        <div className='email' draggable='false'>vincenzodonnarumma22@gmail.com</div>
+                        <div className='phone'>+34 722-760-606</div>
+
+                    </div>
+                    <div className='right-contact'>
+                        <div className='seguir-title'>SEGUIR</div>
+                    </div>
+
+
+                </div>
 
             </div>
 
