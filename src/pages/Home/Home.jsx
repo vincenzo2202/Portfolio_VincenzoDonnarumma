@@ -1,5 +1,7 @@
 import React from 'react';
 import { Carousel } from 'antd';
+import { LeftOutlined, RightOutlined } from "@ant-design/icons";
+ 
 
 import './Home.css';
 import './About.css';
@@ -35,7 +37,17 @@ export const Home = () => {
             </div>
             <div className='projects'>
                 <div className='carousel-projects'>
-                    <Carousel autoplay>
+                    <Carousel autoplay arrows={true} prevArrow={<LeftOutlined />} nextArrow={<RightOutlined />}>
+                        <div>
+                            <h3 className='contentStyle'>
+                                <img className='project-carousel' src={image} alt="home" />
+                            </h3>
+                        </div>
+                        <div>
+                            <h3 className='contentStyle'>
+                                <img className='project-carousel' src={image} alt="home" />
+                            </h3>
+                        </div>
                         <div>
                             <h3 className='contentStyle'>
                                 <img className='project-carousel' src={image} alt="home" />

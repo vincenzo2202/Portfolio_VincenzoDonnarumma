@@ -23,3 +23,49 @@
     background-color: #364d79; 
 }
 
+.ant-carousel .slick-prev,
+.ant-carousel .slick-prev:hover,
+.ant-carousel .slick-prev:focus {
+    font-size: inherit;
+    left: -2.32%;
+    transform: translateX(50%);
+    top: 1.85em;
+    z-index: 2;
+    color: rgb(0, 0, 0); 
+    text-align: center;
+    height: 50%;
+    width: 3em;
+    opacity: 3;  
+    transition: opacity 0.3s ease;   
+    padding-top: 20.48em;
+}
+
+  
+.ant-carousel .slick-prev:hover {
+    background-color: #ffffff8f;
+    opacity: 0.7;  
+    transition: opacity 0.3s ease; 
+  }
+
+.ant-carousel .slick-next,
+.ant-carousel .slick-next:hover,
+.ant-carousel .slick-next:focus {
+    font-size: inherit;
+    right: 2.32%;
+    transform: translateX(50%);
+    top: 1.85em;
+    z-index: 2;
+    color: rgb(0, 0, 0); 
+    text-align: center;
+    height: 50%;
+    width: 3em;
+    opacity: 1;  
+    transition: opacity 0.3s ease;   
+    padding-top: 20.48em;
+  }
+  
+  .ant-carousel .slick-next:hover {
+    background-color: #ffffff8f;
+    opacity: 0.7;  
+    transition: opacity 0.3s ease; 
+  }
