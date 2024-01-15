@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body {
+    overflow-x: hidden;
+    height: 100%;
+    margin: 0;
+}
+
+.home-body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-home {
+    position: relative;
+}
+
+.home-image {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1; 
+    filter: grayscale(100%) brightness(0.95);
+
+}
+
+.title-name {
+    width: 6em; 
+    position: absolute;
+    text-align: left;
+    z-index: 1;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 39em;  
+    line-height: 1;
+    top: 35%;  
+    left: 35%;  
+    transform: translate(-50%, -50%);  
+    text-shadow: 20px 20px 15px rgba(0, 0, 0, 0.5)
+}
+
+.about-me {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    background-color: aqua;
+}
+
+.projects {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    background-color: rgb(151, 179, 29);
+}
+
+.contact{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    background-color: rgb(59, 59, 57);
+}
