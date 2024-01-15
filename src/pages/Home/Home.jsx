@@ -7,6 +7,7 @@ export const Home = () => {
         <div className='home-body'>
             <div className='title-home'>
                 <div className='home'><img className=' home' src= {image} alt="home" />  </div> 
+                <div className='title-name'>Vincenzo Donnarumma</div>
             </div>
         </div>
     );
