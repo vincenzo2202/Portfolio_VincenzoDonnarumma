@@ -36,6 +36,7 @@ export const Home = () => {
                 </div>
             </div>
             <div className='projects'>
+                <div className='projects-title'>Algunos  Proyectos</div>
                 <div className='carousel-projects'>
                     <Carousel autoplay arrows={true} prevArrow={<LeftOutlined />} nextArrow={<RightOutlined />}>
                         <div>
@@ -69,6 +70,11 @@ export const Home = () => {
                             </h3>
                         </div>
                     </Carousel>
+                </div>
+                <div className='see-more'>
+                    <div class="shadow__btn">
+                       VER TODOS
+                    </div>
                 </div>
 
             </div>
