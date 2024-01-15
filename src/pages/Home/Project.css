@@ -1,0 +1,25 @@
+.projects {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    background-color: #25272b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+.carousel-projects{ 
+    width: 55em;
+}
+ 
+.contentStyle {
+    height: 35em;
+    width: 55em;
+    object-fit: cover;
+    color: #fff; 
+    text-align: center;
+    background-color: #364d79; 
+}
+

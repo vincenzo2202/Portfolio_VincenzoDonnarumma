@@ -75,14 +75,6 @@ body {
 
 
 
-.projects {
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-    z-index: -1;
-    background-color: rgb(151, 179, 29);
-}
-
 .contact{
     width: 100vw;
     height: 100vh;

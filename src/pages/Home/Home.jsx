@@ -1,9 +1,15 @@
 import React from 'react';
+import { Carousel } from 'antd';
+
 import './Home.css';
 import './About.css';
+import './Project.css';
 import image from '../../assets/vin1.png';
 
 export const Home = () => {
+
+
+
     return (
         <>
             <div className='home-body'>
@@ -20,24 +26,39 @@ export const Home = () => {
                 </div>
                 <div className='right-box'>
 
-                    <div className='info-about'> Soy un apasionado desarrollador, experto en tecnologías front-end y back-end, enfocado en crear soluciones sólidas. Busco desafíos que impulsen mis habilidades y aprendizaje constante. 
-                    <br/>
-                    <br/>
-                    Aspiro a evolucionar hacia roles de liderazgo técnico, donde pueda aportar mi experiencia para influir estratégicamente en proyectos. Mi objetivo es no solo desarrollar código, sino también contribuir de manera significativa a la dirección técnica, promoviendo el éxito e innovación en cada iniciativa. </div>
+                    <div className='info-about'> Soy un apasionado desarrollador, experto en tecnologías front-end y back-end, enfocado en crear soluciones sólidas. Busco desafíos que impulsen mis habilidades y aprendizaje constante.
+                        <br />
+                        <br />
+                        Aspiro a evolucionar hacia roles de liderazgo técnico, donde pueda aportar mi experiencia para influir estratégicamente en proyectos. Mi objetivo es no solo desarrollar código, sino también contribuir de manera significativa a la dirección técnica, promoviendo el éxito e innovación en cada iniciativa. </div>
                     <div className='button-about'>MIRA LO QUE HE HECHO</div>
                 </div>
             </div>
             <div className='projects'>
-                <div className='box-project p-1'></div>
-                <div className='box-project p-2'></div>
-                <div className='box-project p-3'></div>
-                <div className='box-project p-4'></div>
-                <div className='box-project p-5'></div>
-                <div className='box-project p-6'></div>
-                <div className='box-project p-7'></div>
-                <div className='box-project p-8'></div>
-                <div className='box-project p-9'></div>
-                <div className='box-project p-10'></div>
+                <div className='carousel-projects'>
+                    <Carousel autoplay>
+                        <div>
+                            <h3 className='contentStyle'>
+                                <img className='project-carousel' src={image} alt="home" />
+                            </h3>
+                        </div>
+                        <div>
+                            <h3 className='contentStyle'>
+                                <img className='project-carousel' src={image} alt="home" />
+                            </h3>
+                        </div>
+                        <div>
+                            <h3 className='contentStyle'>
+                                <img className='project-carousel' src={image} alt="home" />
+                            </h3>
+                        </div>
+                        <div>
+                            <h3 className='contentStyle'>
+                                <img className='project-carousel' src={image} alt="home" />
+                            </h3>
+                        </div>
+                    </Carousel>
+                </div>
+
             </div>
             <div className='contact'>
 
@@ -45,4 +66,4 @@ export const Home = () => {
 
         </>
     );
-};
+}; 
