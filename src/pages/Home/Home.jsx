@@ -1,7 +1,7 @@
 import React from 'react';
 import { Carousel } from 'antd';
 import { LeftOutlined, RightOutlined } from "@ant-design/icons";
- 
+
 
 import './Home.css';
 import './About.css';
