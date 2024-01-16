@@ -50,6 +50,12 @@
 
 }
 
+.email-title,
+.phone-title{
+    font-weight: 600;
+    text-decoration: underline;
+}
+
 .seguir-title {
     color: rgb(255, 255, 255);
     font-size: 3em;

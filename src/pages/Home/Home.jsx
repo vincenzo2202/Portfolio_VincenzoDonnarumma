@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import { Carousel } from 'antd';
 import { LeftOutlined, RightOutlined } from '@ant-design/icons'; 
 import {
@@ -35,6 +35,14 @@ import geekzone from '../../assets/geekzone.png';
 
 export const Home = () => {
 
+    const about  = useRef(null);
+    const projects = useRef(null);
+  
+    const handleScrollToSection = (targetRef) => {
+      if (targetRef.current) {
+        targetRef.current.scrollIntoView({ behavior: 'smooth' });
+      }
+    };
 
     return (
         <>
@@ -42,14 +50,14 @@ export const Home = () => {
                 <div className='title-home'>
                     <div className='home-image' draggable='true'><img className='home-image' src={image} alt='home' />  </div>
                     <div className='title-name'>Vincenzo Donnarumma</div>
-                    <div className='button-home'>MIRA LO QUE HE HECHO</div>
+                    <div className='button-home'  onClick={() => handleScrollToSection(about)}>DESCUBRE MÁS</div>
                 </div>
             </div>
-            <div className='about-me'>
+            <div className='about-me' ref={about}>
                 <div className='left-box'>
                     <div className='saludo-about'>HOLA, SOY VINCENZO.</div>
                     <div className='title-about'>Programador Full Stack</div>
-                    <div className='button-about'>MIRA LO QUE HE HECHO</div>
+                    <div className='button-about' onClick={() => handleScrollToSection(projects)}>MIRA LO QUE HE HECHO</div>
                 </div>
                 <div className='right-box'>
                     <div className='info-about'> Soy Vincenzo Donnarumma, y comencé mi viaje en la programación en 2023. Durante el último año, me he sumergido en el aprendizaje autodidacta y para dar un impulso a mi carrera, realicé mi formación en el bootcamp de Desarrollo Full Stack en GeeksHubs Academy, graduándome en diciembre de 2023.
@@ -62,7 +70,7 @@ export const Home = () => {
 
                 </div>
             </div>
-            <div className='projects'>
+            <div className='projects' ref={projects}>
                 <div className='projects-title'>Algunos  Proyectos</div>
                 <div className='carousel-projects'>
                     <Carousel autoplay arrows={true} prevArrow={<LeftOutlined />} nextArrow={<RightOutlined />}>
@@ -183,7 +191,9 @@ export const Home = () => {
                 <div className='box-contact'>
                     <div className='left-contact'>
                         <div className='contact-title'>CONTACTO</div>
+                        <div className='email-title'>Email:</div>
                         <div className='email' draggable='false'>vincenzodonnarumma22@gmail.com</div>
+                        <div className='phone-title'>Teléfono:</div>
                         <div className='phone'>+34 722-760-606</div>
                     </div>
                     <div className='right-contact'>
