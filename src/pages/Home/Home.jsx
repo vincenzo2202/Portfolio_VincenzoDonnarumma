@@ -27,7 +27,7 @@ import './Stack.css';
 
 import image from '../../assets/vin1.png';
 import github from '../../assets/github.png';
-import linkedIn from '../../assets/lnkdIn.png';
+import linkedIn from '../../assets/LnkdIn.png';
 import malcriada from '../../assets/malcriada.png';
 import mastermind from '../../assets/mastermind.png';
 import videoconsola from '../../assets/videoconsola.png';
