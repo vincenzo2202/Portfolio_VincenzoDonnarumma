@@ -1,5 +1,4 @@
-
-.contact{
+.contact {
     width: 100vw;
     height: 100vh;
     object-fit: cover;
@@ -11,57 +10,89 @@
     flex-direction: column;
 }
 
-.message{
+.message {
     font-size: 3em;
     margin-bottom: 1em;
 }
 
-.box-contact{
-    display: flex;   
+.box-contact {
+    display: flex;
     height: 20em;
-    width: 60em ; 
+    width: 60em;
 }
 
-.left-contact{
+.left-contact {
     color: black;
     width: 25em;
-    background-color: white; 
+    background-color: white;
     padding: 1em;
     text-align: left;
     font-size: 1.2em;
 
 }
 
-.right-contact{
+.right-contact {
     color: rgb(255, 255, 255);
     width: 25em;
-    background-color: black; 
+    background-color: black;
     padding: 1em;
     text-align: left;
-    font-size: 1.2em; 
+    font-size: 1.2em;
 }
-.contact-title{
-    color: black; 
+
+.contact-title {
+    color: black;
     font-size: 3em;
-    display: flex; 
-    justify-content: flex-start; 
+    display: flex;
+    justify-content: flex-start;
     margin-bottom: 0.5em;
-    font-weight:700;
+    font-weight: 700;
 
 }
 
-.seguir-title{
-    color: rgb(255, 255, 255); 
+.seguir-title {
+    color: rgb(255, 255, 255);
     font-size: 3em;
-    display: flex; 
-    justify-content: flex-start; 
-    font-weight:600;
+    display: flex;
+    justify-content: flex-start;
+    font-weight: 600;
 }
 
 .email,
-.phone{
+.phone {
     font-size: 1.1em;
     margin-bottom: 1em;
     margin-left: 1em;
     user-select: text;
+}
+
+.github {
+    filter: hue-rotate(180deg);
+    height: 2em;
+    padding-top: 1em;
+    margin-left: 0.5em;
+    display: flex;
+    cursor: pointer;
+}
+
+.github-title {
+    margin-top: 0.9em;
+    margin-left: 0.5em;
+    font-size: 1.2em; 
+    color: white;
+}
+
+.linkedIn {
+    margin-top: 1.6em;
+    margin-left: 0.5em;
+    height: 2em;
+    display: flex;
+    cursor: pointer;
+}
+
+.linkedIn-title {
+    margin-top: 1.3em;
+    margin-left: 0.5em;
+    font-size: 1.2em;
+    color: white;
 }

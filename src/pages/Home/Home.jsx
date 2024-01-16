@@ -9,6 +9,10 @@ import './Project.css';
 import './Contact.css';
 
 import image from '../../assets/vin1.png';
+import github from '../../assets/github.png';
+import linkedIn from '../../assets/lnkdIn.png';
+
+
 
 export const Home = () => {
 
@@ -30,10 +34,13 @@ export const Home = () => {
                 </div>
                 <div className='right-box'>
 
-                    <div className='info-about'> Soy un apasionado desarrollador, experto en tecnologías front-end y back-end, enfocado en crear soluciones sólidas. Busco desafíos que impulsen mis habilidades y aprendizaje constante.
+                    <div className='info-about'> Soy Vincenzo Donnarumma, y comencé mi viaje en la programación en 2023. Durante el último año, me he sumergido en el aprendizaje autodidacta y, para dar un impulso a mi carrera, realicé mi formación en el bootcamp de Desarrollo Full Stack en GeeksHubs Academy, graduándome en diciembre de 2023.
                         <br />
                         <br />
-                        Aspiro a evolucionar hacia roles de liderazgo técnico, donde pueda aportar mi experiencia para influir estratégicamente en proyectos. Mi objetivo es no solo desarrollar código, sino también contribuir de manera significativa a la dirección técnica, promoviendo el éxito e innovación en cada iniciativa. </div>
+                        Además de mi pasión por la tecnología, también he adquirido conocimientos en marketing digital, fusionando así dos mundos afines. Disfruto de la interacción social y los desafíos emprendedores.
+                        <br />
+                        <br />
+                        ¡Gracias por pasar por aquí! Espero que disfrutes lo que encuentres. Si tienes alguna pregunta o simplemente quieres charlar, ¡estaré encantado de escucharte! </div>
                     <div className='button-about'>MIRA LO QUE HE HECHO</div>
                 </div>
             </div>
@@ -86,17 +93,20 @@ export const Home = () => {
                         <div className='contact-title'>CONTACTO</div>
                         <div className='email' draggable='false'>vincenzodonnarumma22@gmail.com</div>
                         <div className='phone'>+34 722-760-606</div>
-
                     </div>
                     <div className='right-contact'>
                         <div className='seguir-title'>SEGUIR</div>
+                        <a className='github' href='https://github.com/vincenzo2202' target='_blank' rel='noopener noreferrer'>
+                            <img className='github' src={github} alt="github" />
+                            <div className='github-title'>GitHub</div>
+                        </a>
+                        <a className='linkedIn' href='https://www.linkedin.com/in/vincenzo2202' target='_blank' rel='noopener noreferrer'>
+                            <img className='linkedIn' src={linkedIn} alt="linkedIn" />
+                            <div className='linkedIn-title'>LinkedIn</div>
+                        </a>
                     </div>
-
-
                 </div>
-
             </div>
-
         </>
     );
 }; 
