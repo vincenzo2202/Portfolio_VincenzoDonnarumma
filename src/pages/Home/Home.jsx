@@ -31,15 +31,7 @@ import linkedIn from '../../assets/lnkdIn.png';
 import malcriada from '../../assets/malcriada.png';
 import mastermind from '../../assets/mastermind.png';
 import videoconsola from '../../assets/videoconsola.png';
-import geekzone from '../../assets/geekzone.png';
-
-import '../../assets/vin1.png';
-import '../../assets/github.png';
-import '../../assets/lnkdIn.png';
-import '../../assets/malcriada.png';
-import '../../assets/mastermind.png';
-import '../../assets/videoconsola.png';
-import '../../assets/geekzone.png';
+import geekzone from '../../assets/geekzone.png'; 
 
 export const Home = () => {
 
