@@ -1,12 +1,10 @@
 import React from 'react';
 import { Carousel } from 'antd';
-import { LeftOutlined, RightOutlined } from '@ant-design/icons';
-import { MdOutlineScreenRotation } from 'react-icons/md';
+import { LeftOutlined, RightOutlined } from '@ant-design/icons'; 
 import {
     FaHtml5,
     FaCss3,
-    FaBootstrap,
-    FaLess,
+    FaBootstrap, 
     FaReact,
     FaNode,
     FaPhp,
@@ -14,18 +12,13 @@ import {
     FaGitAlt,
     FaGithub,
     FaDocker,
-    FaAws,
-    FaDatabase,
-    FaServer,
+    FaAws 
 } from 'react-icons/fa';
 import { SiTypescript, SiRedux, SiExpress, SiMongodb, SiPostman } from 'react-icons/si';
-import { DiJqueryLogo, DiMysql } from 'react-icons/di';
+import { DiMysql } from 'react-icons/di';
 import { IoLogoJavascript } from 'react-icons/io';
-import { PiFileSqlDuotone } from 'react-icons/pi';
-import { GoShieldCheck } from 'react-icons/go';
-
-
-
+import { PiFileSqlDuotone } from 'react-icons/pi'; 
+ 
 import './Home.css';
 import './About.css';
 import './Project.css';
@@ -35,6 +28,10 @@ import './Stack.css';
 import image from '../../assets/vin1.png';
 import github from '../../assets/github.png';
 import linkedIn from '../../assets/lnkdIn.png';
+import malcriada from '../../assets/malcriada.png';
+import mastermind from '../../assets/mastermind.png';
+import videoconsola from '../../assets/videoconsola.png';
+import geekzone from '../../assets/geekzone.png';
 
 export const Home = () => {
 
@@ -55,50 +52,40 @@ export const Home = () => {
                     <div className='button-about'>MIRA LO QUE HE HECHO</div>
                 </div>
                 <div className='right-box'>
-                    <div className='info-about'> Soy Vincenzo Donnarumma, y comencé mi viaje en la programación en 2023. Durante el último año, me he sumergido en el aprendizaje autodidacta y, para dar un impulso a mi carrera, realicé mi formación en el bootcamp de Desarrollo Full Stack en GeeksHubs Academy, graduándome en diciembre de 2023.
+                    <div className='info-about'> Soy Vincenzo Donnarumma, y comencé mi viaje en la programación en 2023. Durante el último año, me he sumergido en el aprendizaje autodidacta y para dar un impulso a mi carrera, realicé mi formación en el bootcamp de Desarrollo Full Stack en GeeksHubs Academy, graduándome en diciembre de 2023.
                         <br />
                         <br />
                         Además de mi pasión por la tecnología, también he adquirido conocimientos en marketing digital, fusionando así dos mundos afines. Disfruto de la interacción social y los desafíos emprendedores.
                         <br />
                         <br />
                         ¡Gracias por pasar por aquí! Espero que disfrutes lo que encuentres. Si tienes alguna pregunta o simplemente quieres charlar, ¡estaré encantado de escucharte! </div>
-                    
+
                 </div>
             </div>
             <div className='projects'>
                 <div className='projects-title'>Algunos  Proyectos</div>
                 <div className='carousel-projects'>
                     <Carousel autoplay arrows={true} prevArrow={<LeftOutlined />} nextArrow={<RightOutlined />}>
-                        <div>
+                        <a href='https://github.com/vincenzo2202/Tattoo-Studio-Frontend-' target='_blank' rel='noopener noreferrer'>
                             <h3 className='contentStyle'>
-                                <img className='project-carousel' src={image} alt='home' />
+                                <img className='project-carousel' src={malcriada} alt='home' />
                             </h3>
-                        </div>
-                        <div>
+                        </a>
+                        <a href='https://github.com/vincenzo2202/MasterMind-GH-project2' target='_blank' rel='noopener noreferrer'>
                             <h3 className='contentStyle'>
-                                <img className='project-carousel' src={image} alt='home' />
+                                <img className='project-carousel' src={mastermind} alt='home' />
                             </h3>
-                        </div>
-                        <div>
+                        </a>
+                        <a href='https://github.com/vincenzo2202/Proyecto2GHVideoconsola' target='_blank' rel='noopener noreferrer'>
                             <h3 className='contentStyle'>
-                                <img className='project-carousel' src={image} alt='home' />
+                                <img className='project-carousel' src={videoconsola} alt='home' />
                             </h3>
-                        </div>
-                        <div>
+                        </a>
+                        <a href='https://github.com/vincenzo2202/geek-zone-GH-frontend' target='_blank' rel='noopener noreferrer'>
                             <h3 className='contentStyle'>
-                                <img className='project-carousel' src={image} alt='home' />
+                                <img className='project-carousel' src={geekzone} alt='home' />
                             </h3>
-                        </div>
-                        <div>
-                            <h3 className='contentStyle'>
-                                <img className='project-carousel' src={image} alt='home' />
-                            </h3>
-                        </div>
-                        <div>
-                            <h3 className='contentStyle'>
-                                <img className='project-carousel' src={image} alt='home' />
-                            </h3>
-                        </div>
+                        </a> 
                     </Carousel>
                 </div>
                 <div className='see-more'>
