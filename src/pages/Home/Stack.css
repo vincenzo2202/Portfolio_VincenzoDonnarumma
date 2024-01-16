@@ -7,20 +7,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column; 
+    flex-direction: column;
 }
 
-.stack-container{  
+.stack-container {
     height: 100%;
-    display: flex; 
+    display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;  
+    flex-direction: column;
 
 }
 
 .container {
-    min-height: calc(100vh - 250px); 
+    min-height: calc(100vh - 250px);
     padding: 100px;
     display: flex;
     flex-direction: column;
@@ -49,12 +49,12 @@
 }
 
 .content {
-    align-self: center; 
+    align-self: center;
     width: 100%;
     max-width: 1200px;
     display: flex;
     align-items: center;
-    justify-content: center; 
+    justify-content: center;
     gap: 50px;
     transform: scale(1.55);
     margin-top: 8em;
@@ -94,8 +94,8 @@
 .contentTechnologiesSectionListElement span {
     color: white;
 }
- 
-.contentSkillsTitle{
+
+.contentSkillsTitle {
     width: 100vw;
     font-size: 3em;
     display: flex;
@@ -105,7 +105,7 @@
     position: relative;
 }
 
-@media (max-width: 1200px) {
+/* @media (max-width: 1200px) {
     .content {
         flex-direction: column;
     }
@@ -131,4 +131,52 @@
     .contentTechnologiesSectionListElement span {
         display: none;
     } 
+} */
+
+@media screen and (max-width: 768px) {
+
+    .stack {
+        height: 100vh;
+        flex-direction: row;
+    }
+
+    .stack-container {
+
+        flex-direction: row;
+
+    }
+
+    .content {
+        flex-direction: row;
+        justify-content: flex-start;
+        margin-top: 1em;
+        
+    }
+
+    .contentTechnologies {
+        display: flex;
+        flex-direction: column; 
+    }
+
+    .contentTechnologiesSectionList {
+        padding: 0;
+        gap: 10px;
+        display: grid;
+        list-style: none;
+        grid-template-columns: repeat(4, 1fr);
+        transform: scale(1.5);
+    }
+
+    span {
+        display: none;
+    }
+
+    hr {
+        display: none;
+    }
+
+    .contentTechnologiesSectionTitle {
+        font-weight: 800;   
+        padding-right: 1em;
+    }
 }
