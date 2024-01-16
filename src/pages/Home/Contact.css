@@ -10,7 +10,7 @@
     flex-direction: column;
 }
 
-.message { 
+.message {
     font-size: 4em;
     margin-bottom: 2em;
 }
@@ -51,7 +51,7 @@
 }
 
 .email-title,
-.phone-title{
+.phone-title {
     font-weight: 600;
     text-decoration: underline;
 }
@@ -84,7 +84,7 @@
 .github-title {
     margin-top: 0.9em;
     margin-left: 0.5em;
-    font-size: 1.2em; 
+    font-size: 1.2em;
     color: white;
 }
 
@@ -101,4 +101,30 @@
     margin-left: 0.5em;
     font-size: 1.2em;
     color: white;
+}
+
+@media screen and (max-width: 768px) {
+
+    .box-contact {
+        transform: scale(0.6);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: -4em;
+    }
+
+    .left-contact {
+        height: 30em;
+
+    }
+
+    .right-contact {
+        height: 30em;
+        padding-bottom: 4em;
+    }
+
+    .message {
+        margin-top: -1em;
+    }
+
 }
