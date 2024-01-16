@@ -1,0 +1,130 @@
+.stack {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    background-color: #1B1F24;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+}
+
+.stack-container{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;  
+
+}
+
+.container {
+    min-height: calc(100vh - 250px);
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    background-color: black;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.title hr {
+    height: 3px;
+    width: 30px;
+    background-color: var(--green);
+    border: none;
+}
+
+.title h2 {
+    font-size: 25px;
+    font-weight: 600;
+    color: white;
+}
+
+.content {
+    align-self: center;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    transform: scale(1.5);
+    margin-top: 1em;
+}
+
+.contentTechnologies {
+    display: flex;
+    gap: 20px;
+}
+
+.contentTechnologiesSection {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contentTechnologiesSectionTitle {
+    font-weight: 800;
+    color: var(--green);
+}
+
+.contentTechnologiesSectionList {
+    padding: 0;
+    flex-direction: column;
+    gap: 10px;
+    display: flex;
+    list-style: none;
+}
+
+.contentTechnologiesSectionListElement {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: white;
+}
+
+.contentTechnologiesSectionListElement span {
+    color: white;
+}
+ 
+.contentSkillsTitle{
+    display: flex; 
+    margin-left: 6em;  
+    font-size: 3em;
+    width:100vw ;  
+    margin-bottom:2em;
+}
+
+@media (max-width: 1200px) {
+    .content {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 50px 20px;
+    }
+}
+ 
+@media (max-width: 400px) {
+    .contentTechnologies {
+        gap: 10px;
+    }
+    .contentTechnologiesSectionList {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .contentTechnologiesSectionListElementIcon {
+        font-size: 20px;
+    }
+    .contentTechnologiesSectionListElement span {
+        display: none;
+    } 
+}

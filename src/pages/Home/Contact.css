@@ -10,9 +10,9 @@
     flex-direction: column;
 }
 
-.message {
-    font-size: 3em;
-    margin-bottom: 1em;
+.message { 
+    font-size: 4em;
+    margin-bottom: 2em;
 }
 
 .box-contact {

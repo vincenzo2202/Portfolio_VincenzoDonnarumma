@@ -1,28 +1,49 @@
 import React from 'react';
 import { Carousel } from 'antd';
-import { LeftOutlined, RightOutlined } from "@ant-design/icons";
+import { LeftOutlined, RightOutlined } from '@ant-design/icons';
+import { MdOutlineScreenRotation } from 'react-icons/md';
+import {
+    FaHtml5,
+    FaCss3,
+    FaBootstrap,
+    FaLess,
+    FaReact,
+    FaNode,
+    FaPhp,
+    FaLaravel,
+    FaGitAlt,
+    FaGithub,
+    FaDocker,
+    FaAws,
+    FaDatabase,
+    FaServer,
+} from 'react-icons/fa';
+import { SiTypescript, SiRedux, SiExpress, SiMongodb, SiPostman } from 'react-icons/si';
+import { DiJqueryLogo, DiMysql } from 'react-icons/di';
+import { IoLogoJavascript } from 'react-icons/io';
+import { PiFileSqlDuotone } from 'react-icons/pi';
+import { GoShieldCheck } from 'react-icons/go';
+
 
 
 import './Home.css';
 import './About.css';
 import './Project.css';
 import './Contact.css';
+import './Stack.css';
 
 import image from '../../assets/vin1.png';
 import github from '../../assets/github.png';
 import linkedIn from '../../assets/lnkdIn.png';
 
-
-
 export const Home = () => {
-
 
 
     return (
         <>
             <div className='home-body'>
                 <div className='title-home'>
-                    <div className='home-image' draggable="true"><img className='home-image' src={image} alt="home" />  </div>
+                    <div className='home-image' draggable='true'><img className='home-image' src={image} alt='home' />  </div>
                     <div className='title-name'>Vincenzo Donnarumma</div>
                     <div className='button-home'>MIRA LO QUE HE HECHO</div>
                 </div>
@@ -31,9 +52,9 @@ export const Home = () => {
                 <div className='left-box'>
                     <div className='saludo-about'>HOLA, SOY VINCENZO.</div>
                     <div className='title-about'>Programador Full Stack</div>
+                    <div className='button-about'>MIRA LO QUE HE HECHO</div>
                 </div>
                 <div className='right-box'>
-
                     <div className='info-about'> Soy Vincenzo Donnarumma, y comencé mi viaje en la programación en 2023. Durante el último año, me he sumergido en el aprendizaje autodidacta y, para dar un impulso a mi carrera, realicé mi formación en el bootcamp de Desarrollo Full Stack en GeeksHubs Academy, graduándome en diciembre de 2023.
                         <br />
                         <br />
@@ -41,7 +62,7 @@ export const Home = () => {
                         <br />
                         <br />
                         ¡Gracias por pasar por aquí! Espero que disfrutes lo que encuentres. Si tienes alguna pregunta o simplemente quieres charlar, ¡estaré encantado de escucharte! </div>
-                    <div className='button-about'>MIRA LO QUE HE HECHO</div>
+                    
                 </div>
             </div>
             <div className='projects'>
@@ -50,39 +71,123 @@ export const Home = () => {
                     <Carousel autoplay arrows={true} prevArrow={<LeftOutlined />} nextArrow={<RightOutlined />}>
                         <div>
                             <h3 className='contentStyle'>
-                                <img className='project-carousel' src={image} alt="home" />
+                                <img className='project-carousel' src={image} alt='home' />
                             </h3>
                         </div>
                         <div>
                             <h3 className='contentStyle'>
-                                <img className='project-carousel' src={image} alt="home" />
+                                <img className='project-carousel' src={image} alt='home' />
                             </h3>
                         </div>
                         <div>
                             <h3 className='contentStyle'>
-                                <img className='project-carousel' src={image} alt="home" />
+                                <img className='project-carousel' src={image} alt='home' />
                             </h3>
                         </div>
                         <div>
                             <h3 className='contentStyle'>
-                                <img className='project-carousel' src={image} alt="home" />
+                                <img className='project-carousel' src={image} alt='home' />
                             </h3>
                         </div>
                         <div>
                             <h3 className='contentStyle'>
-                                <img className='project-carousel' src={image} alt="home" />
+                                <img className='project-carousel' src={image} alt='home' />
                             </h3>
                         </div>
                         <div>
                             <h3 className='contentStyle'>
-                                <img className='project-carousel' src={image} alt="home" />
+                                <img className='project-carousel' src={image} alt='home' />
                             </h3>
                         </div>
                     </Carousel>
                 </div>
                 <div className='see-more'>
-                    <div class="shadow__btn">
+                    <div class='shadow__btn'>
                         VER TODOS
+                    </div>
+                </div>
+            </div>
+            <div className='stack'>
+                <div className='stack-container'>
+                    <div className='contentSkillsTitle'>Stack Tecnológico</div>
+                    <div className='content'>
+                        <div className='contentTechnologies'>
+                            <div className='contentTechnologiesSection'>
+                                <p className='contentTechnologiesSectionTitle'>FRONTEND</p>
+                                <ul className='contentTechnologiesSectionList'>
+                                    <li className='contentTechnologiesSectionListElement'>
+                                        <FaHtml5 className='contentTechnologiesSectionListElementIcon' /> <span>HTML</span>
+                                    </li>
+                                    <li className='contentTechnologiesSectionListElement'>
+                                        <FaCss3 className='contentTechnologiesSectionListElementIcon' /> <span>CSS</span>
+                                    </li>
+                                    <li className='contentTechnologiesSectionListElement'>
+                                        <FaBootstrap className='contentTechnologiesSectionListElementIcon' /> <span>Bootstrap</span>
+                                    </li>
+                                    <li className='contentTechnologiesSectionListElement'>
+                                        <IoLogoJavascript className='contentTechnologiesSectionListElementIcon' /> <span>JavaScript</span>
+                                    </li>
+                                    <li className='contentTechnologiesSectionListElement'>
+                                        <SiTypescript className='contentTechnologiesSectionListElementIcon' /> <span>TypeScript</span>
+                                    </li>
+                                    <li className='contentTechnologiesSectionListElement'>
+                                        <FaReact className='contentTechnologiesSectionListElementIcon' /> <span>React</span>
+                                    </li>
+                                    <li className='contentTechnologiesSectionListElement'>
+                                        <SiRedux className='contentTechnologiesSectionListElementIcon' /> <span>Redux</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <hr />
+                            <div className='contentTechnologiesSection'>
+                                <p className='contentTechnologiesSectionTitle'>BACKEND</p>
+                                <ul className='contentTechnologiesSectionList'>
+                                    <li className='contentTechnologiesSectionListElement'>
+                                        <FaNode className='contentTechnologiesSectionListElementIcon' /> <span>Node.js</span>
+                                    </li>
+                                    <li className='contentTechnologiesSectionListElement'>
+                                        <SiExpress className='contentTechnologiesSectionListElementIcon' /> <span>Express</span>
+                                    </li>
+                                    <li className='contentTechnologiesSectionListElement'>
+                                        <SiMongodb className='contentTechnologiesSectionListElementIcon' /> <span>MongoDB</span>
+                                    </li>
+                                    <li className='contentTechnologiesSectionListElement'>
+                                        <DiMysql className='contentTechnologiesSectionListElementIcon' /> <span>MySQL</span>
+                                    </li>
+                                    <li className='contentTechnologiesSectionListElement'>
+                                        <PiFileSqlDuotone className='contentTechnologiesSectionListElementIcon' /> <span>SQL</span>
+                                    </li>
+                                    <li className='contentTechnologiesSectionListElement'>
+                                        <FaPhp className='contentTechnologiesSectionListElementIcon' /> <span>PHP</span>
+                                    </li>
+                                    <li className='contentTechnologiesSectionListElement'>
+                                        <FaLaravel className='contentTechnologiesSectionListElementIcon' /> <span>Laravel</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <hr />
+                            <div className='contentTechnologiesSection'>
+                                <p className='contentTechnologiesSectionTitle'>HERRAMIENTAS</p>
+                                <ul className='contentTechnologiesSectionList'>
+                                    <li className='contentTechnologiesSectionListElement'>
+                                        <FaGitAlt className='contentTechnologiesSectionListElementIcon' /> <span>Git</span>
+                                    </li>
+                                    <li className='contentTechnologiesSectionListElement'>
+                                        <FaGithub className='contentTechnologiesSectionListElementIcon' /> <span>GitHub</span>
+                                    </li>
+                                    <li className='contentTechnologiesSectionListElement'>
+                                        <SiPostman className='contentTechnologiesSectionListElementIcon' /> <span>Postman</span>
+                                    </li>
+                                    <li className='contentTechnologiesSectionListElement'>
+                                        <FaDocker className='contentTechnologiesSectionListElementIcon' /> <span>Docker</span>
+                                    </li>
+                                    <li className='contentTechnologiesSectionListElement'>
+                                        <FaAws className='contentTechnologiesSectionListElementIcon' />
+                                        <span>Deploy</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -97,11 +202,11 @@ export const Home = () => {
                     <div className='right-contact'>
                         <div className='seguir-title'>SEGUIR</div>
                         <a className='github' href='https://github.com/vincenzo2202' target='_blank' rel='noopener noreferrer'>
-                            <img className='github' src={github} alt="github" />
+                            <img className='github' src={github} alt='github' />
                             <div className='github-title'>GitHub</div>
                         </a>
                         <a className='linkedIn' href='https://www.linkedin.com/in/vincenzo2202' target='_blank' rel='noopener noreferrer'>
-                            <img className='linkedIn' src={linkedIn} alt="linkedIn" />
+                            <img className='linkedIn' src={linkedIn} alt='linkedIn' />
                             <div className='linkedIn-title'>LinkedIn</div>
                         </a>
                     </div>

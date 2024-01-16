@@ -3,24 +3,32 @@
      height: 100vh;
      object-fit: cover;
      z-index: -1;
-     background-color: #1B1F24; 
+     background-color: #1B1F24;
      display: flex;
-     justify-content: center;
-     align-items: center;
+     justify-content: flex-start;
+     align-items: flex-start;
+     padding-top: 6em;
  }
 
  .left-box,
  .right-box {
-     width: 100vw;
-     display: flex; 
-     flex-direction: column;
-     margin: 8em;
-     margin-top: 2em;
+     width: 40em;
+     margin: 7em;
+     margin-top: 3em;
+ }
 
+ .left-box {
+     position: relative;
+     left:  5em;
+ }
+
+ .right-box {
+     position: relative;
+     left: -5em;
  }
 
  .saludo-about {
-     font-size: 2em; 
+     font-size: 2em;
      text-align: left;
  }
 
@@ -31,25 +39,27 @@
  }
 
  .info-about {
-    text-align: justify;
-    font-size: 1.2em;
+     text-align: justify;
+     font-size: 1.2em;
  }
 
  .button-about {
-    display: flex;
-    position: relative;
-    top: 4.2em;
-    width: 12em;
-    padding: 0.5em;
-    background-color: white;
-    text-align: left;
-    color: black;
-    font-size: 1.5em;
-    cursor: pointer; 
+     display: flex;
+     position: relative;
+     top: 3em;
+     width: 12em;
+     padding: 0.5em;
+     background-color: white;
+     text-align: left;
+     color: black;
+     font-size: 1.5em;
+     cursor: pointer;
  }
+
  .button-about:hover {
-    transform: scale(1.03);
+     transform: scale(1.03);
  }
+
  .button-about:active {
-    transform: scale(0.95);
+     transform: scale(0.95);
  }
