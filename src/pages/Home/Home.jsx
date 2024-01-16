@@ -1,10 +1,10 @@
 import React, { useEffect, useRef } from 'react';
 import { Carousel } from 'antd';
-import { LeftOutlined, RightOutlined } from '@ant-design/icons'; 
+import { LeftOutlined, RightOutlined } from '@ant-design/icons';
 import {
     FaHtml5,
     FaCss3,
-    FaBootstrap, 
+    FaBootstrap,
     FaReact,
     FaNode,
     FaPhp,
@@ -12,13 +12,13 @@ import {
     FaGitAlt,
     FaGithub,
     FaDocker,
-    FaAws 
+    FaAws
 } from 'react-icons/fa';
 import { SiTypescript, SiRedux, SiExpress, SiMongodb, SiPostman } from 'react-icons/si';
 import { DiMysql } from 'react-icons/di';
 import { IoLogoJavascript } from 'react-icons/io';
-import { PiFileSqlDuotone } from 'react-icons/pi'; 
- 
+import { PiFileSqlDuotone } from 'react-icons/pi';
+
 import './Home.css';
 import './About.css';
 import './Project.css';
@@ -35,13 +35,13 @@ import geekzone from '../../assets/geekzone.png';
 
 export const Home = () => {
 
-    const about  = useRef(null);
+    const about = useRef(null);
     const projects = useRef(null);
-  
+
     const handleScrollToSection = (targetRef) => {
-      if (targetRef.current) {
-        targetRef.current.scrollIntoView({ behavior: 'smooth' });
-      }
+        if (targetRef.current) {
+            targetRef.current.scrollIntoView({ behavior: 'smooth' });
+        }
     };
 
     return (
@@ -50,7 +50,7 @@ export const Home = () => {
                 <div className='title-home'>
                     <div className='home-image' draggable='true'><img className='home-image' src={image} alt='home' />  </div>
                     <div className='title-name'>Vincenzo Donnarumma</div>
-                    <div className='button-home'  onClick={() => handleScrollToSection(about)}>DESCUBRE MÁS</div>
+                    <div className='button-home' onClick={() => handleScrollToSection(about)}>DESCUBRE MÁS</div>
                 </div>
             </div>
             <div className='about-me' ref={about}>
@@ -93,11 +93,11 @@ export const Home = () => {
                             <h3 className='contentStyle'>
                                 <img className='project-carousel' src={geekzone} alt='home' />
                             </h3>
-                        </a> 
+                        </a>
                     </Carousel>
                 </div>
                 <div className='see-more'>
-                    <div class='shadow__btn'>
+                    <div class='shadow__btn' >
                         VER TODOS
                     </div>
                 </div>
