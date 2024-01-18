@@ -40,6 +40,7 @@
  .info-about {
      text-align: justify;
      font-size: 1.3em;
+     min-width: 20em;  
  }
 
  .button-about {
