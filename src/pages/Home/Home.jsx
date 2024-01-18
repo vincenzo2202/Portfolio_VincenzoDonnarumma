@@ -190,7 +190,7 @@ export const Home = () => {
             <div className='contact'>
                 <div className='message'>¡Hagamos algo genial!</div>
                 <div class="Download-button">
-                    <a class="Download-link" href='https://drive.google.com/file/d/12f1A-g0SPCKk-V4H_QUqRTQ_7RXx0Yfe/view?usp=sharing' target='_blank' rel='noopener noreferrer'>
+                    <a class="Download-link" href='https://drive.google.com/file/d/1pBSwb2WwPwvy3OmFDmYu9Xl4WhVWmcoI/view?usp=drive_link' target='_blank' rel='noopener noreferrer'>
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             height="16"
