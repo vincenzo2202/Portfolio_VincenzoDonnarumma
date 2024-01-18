@@ -99,8 +99,7 @@ body {
         height: 100vh;
         object-fit: cover;
         z-index: -1;
-        filter: grayscale(100%) brightness(0.95); 
-
+        filter: grayscale(100%) brightness(0.95);  
     }
 
     .title-name {
@@ -111,7 +110,7 @@ body {
         font-family: 'Bebas Neue', sans-serif;
         font-size: 4em;
         line-height: 1;
-        top: 30%;
+        top: 39%;
         left: 55%;
         transform: translate(-50%, -50%);
         text-shadow: 20px 20px 15px rgba(0, 0, 0, 0.5)
@@ -140,14 +139,14 @@ body {
 
     .button-home:hover {
         top: 75%;
-        left: 25%;
+        left: 50%;
         transform: translate(-50%, -50%) scale(1.03);
 
     }
 
     .button-home:active {
         top: 75%;
-        left: 25%;
+        left: 50%;
         transform: translate(-50%, -50%) scale(0.95);
 
     }

@@ -53,11 +53,11 @@ export const Home = () => {
                     <div className='button-home' onClick={() => handleScrollToSection(about)}>DESCUBRE MÁS</div>
                 </div>
             </div>
-            <div className='about-me' ref={about}>
+            <div className='about-me' >
                 <div className='left-box'>
-                    <div className='saludo-about'>HOLA, SOY VINCENZO.</div>
+                    <div className='saludo-about' ref={about}>HOLA, SOY VINCENZO.</div>
                     <div className='title-about'>Programador Full Stack</div>
-                    <div className='button-about' onClick={() => handleScrollToSection(projects)}>MIRA LO QUE HE HECHO</div>
+                    <div className='button-about' onClick={() => handleScrollToSection(projects)} >MIRA LO QUE HE HECHO</div>
                 </div>
                 <div className='right-box'>
                     <div className='info-about'> Soy Vincenzo Donnarumma, y comencé mi viaje en la programación en 2023. Durante el último año, me he sumergido en el aprendizaje autodidacta y para dar un impulso a mi carrera, realicé mi formación en el bootcamp de Desarrollo Full Stack en GeeksHubs Academy, graduándome en diciembre de 2023.
@@ -70,8 +70,8 @@ export const Home = () => {
 
                 </div>
             </div>
-            <div className='projects' ref={projects}>
-                <div className='projects-title'>Algunos  Proyectos</div>
+            <div className='projects' >
+                <div className='projects-title' ref={projects}>Algunos  Proyectos</div>
                 <div className='carousel-projects'>
                     <Carousel autoplay arrows={true} prevArrow={<LeftOutlined />} nextArrow={<RightOutlined />}>
                         <a href='https://github.com/vincenzo2202/Tattoo-Studio-Frontend-' target='_blank' rel='noopener noreferrer'>
