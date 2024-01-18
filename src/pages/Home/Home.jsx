@@ -103,12 +103,13 @@ export const Home = () => {
                 </div>
             </div>
             <div className='stack'>
+                <div className='contentSkillsTitle'>Stack Tecnológico
+                </div>
                 <div className='stack-container'>
-                    <div className='contentSkillsTitle'>Stack Tecnológico</div>
                     <div className='content'>
                         <div className='contentTechnologies'>
                             <div className='contentTechnologiesSection'>
-                                <p className='contentTechnologiesSectionTitle'>FRONTEND</p>
+                                <div className='contentTechnologiesSectionTitle'>FRONTEND</div>
                                 <ul className='contentTechnologiesSectionList'>
                                     <li className='contentTechnologiesSectionListElement'>
                                         <FaHtml5 className='contentTechnologiesSectionListElementIcon' /> <span>HTML</span>
@@ -135,7 +136,7 @@ export const Home = () => {
                             </div>
                             <hr />
                             <div className='contentTechnologiesSection'>
-                                <p className='contentTechnologiesSectionTitle'>BACKEND</p>
+                                <div className='contentTechnologiesSectionTitle'>BACKEND</div>
                                 <ul className='contentTechnologiesSectionList'>
                                     <li className='contentTechnologiesSectionListElement'>
                                         <FaNode className='contentTechnologiesSectionListElementIcon' /> <span>Node.js</span>
@@ -162,7 +163,7 @@ export const Home = () => {
                             </div>
                             <hr />
                             <div className='contentTechnologiesSection'>
-                                <p className='contentTechnologiesSectionTitle'>HERRAMIENTAS</p>
+                                <div className='contentTechnologiesSectionTitle'>HERRAMIENTAS</div>
                                 <ul className='contentTechnologiesSectionList'>
                                     <li className='contentTechnologiesSectionListElement'>
                                         <FaGitAlt className='contentTechnologiesSectionListElementIcon' /> <span>Git</span>
@@ -187,7 +188,7 @@ export const Home = () => {
                 </div>
             </div>
             <div className='contact'>
-                <div className='message'>¡Hagamos algo genial!</div> 
+                <div className='message'>¡Hagamos algo genial!</div>
                 <div class="Download-button">
                     <a class="Download-link" href='https://drive.google.com/file/d/12f1A-g0SPCKk-V4H_QUqRTQ_7RXx0Yfe/view?usp=sharing' target='_blank' rel='noopener noreferrer'>
                         <svg
