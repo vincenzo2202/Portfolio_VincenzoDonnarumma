@@ -48,14 +48,14 @@ export const Home = () => {
         <>
             <div className='home-body'>
                 <div className='title-home'>
-                    <div className='home-image' draggable='true'><img className='home-image' src={image} alt='home' />  </div>
+                    <div   draggable='true'><img className='home-image' src={image} alt='home' />  </div>
                     <div className='title-name'>Vincenzo Donnarumma</div>
                     <div className='button-home' onClick={() => handleScrollToSection(about)}>DESCUBRE MÁS</div>
                 </div>
             </div>
-            <div className='about-me' >
-                <div className='left-box'>
-                    <div className='saludo-about' ref={about}>HOLA, SOY VINCENZO.</div>
+            <div className='about-me' ref={about}>
+                <div className='left-box' >
+                    <div className='saludo-about'>HOLA, SOY VINCENZO.</div>
                     <div className='title-about'>Programador Full Stack</div>
                     <div className='button-about' onClick={() => handleScrollToSection(projects)} >MIRA LO QUE HE HECHO</div>
                 </div>
@@ -70,8 +70,8 @@ export const Home = () => {
 
                 </div>
             </div>
-            <div className='projects' >
-                <div className='projects-title' ref={projects}>Algunos  Proyectos</div>
+            <div className='projects' ref={projects}>
+                <div className='projects-title' >Algunos  Proyectos</div>
                 <div className='carousel-projects'>
                     <Carousel autoplay arrows={true} prevArrow={<LeftOutlined />} nextArrow={<RightOutlined />}>
                         <a href='https://github.com/vincenzo2202/Tattoo-Studio-Frontend-' target='_blank' rel='noopener noreferrer'>
