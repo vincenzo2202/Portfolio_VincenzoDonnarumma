@@ -31,18 +31,24 @@ import linkedIn from '../../assets/LnkdIn.png';
 import malcriada from '../../assets/malcriada.png';
 import mastermind from '../../assets/mastermind.png';
 import videoconsola from '../../assets/videoconsola.png';
-import geekzone from '../../assets/geekzone.png';
+import geekzone from '../../assets/geekzone.png'; 
+import { useNavigate } from 'react-router-dom';
 
 export const Home = () => {
 
     const about = useRef(null);
     const projects = useRef(null);
+    const navigate = useNavigate()
 
     const handleScrollToSection = (targetRef) => {
         if (targetRef.current) {
             targetRef.current.scrollIntoView({ behavior: 'smooth' });
         }
     };
+
+    const portfolioBtn = ()=>{
+       return navigate('/portfolio');
+    }
 
     return (
         <>
@@ -97,7 +103,7 @@ export const Home = () => {
                     </Carousel>
                 </div>
                 <div className='see-more'>
-                    <div class='shadow__btn' >
+                    <div class='shadow__btn' onClick={portfolioBtn} >
                         VER TODOS
                     </div>
                 </div>
