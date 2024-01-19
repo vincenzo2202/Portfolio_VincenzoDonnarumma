@@ -44,7 +44,7 @@ export const Portfolio = () => {
                     cardImage={malcriada}
                     cardName='Malcriada Tattoo Studio Frontend'
                     cardInfo='lorem sddfgasfgasgfdsdgasdg'
-                    cardPreview='#'
+                    cardPreview='https://master.d9uttmtdayy6h.amplifyapp.com/'
                     cardCode='https://github.com/vincenzo2202/Tattoo-Studio-Frontend-'
                 />
                 <PortfolioCard
@@ -58,21 +58,21 @@ export const Portfolio = () => {
                     cardImage={mastermind}
                     cardName='MasterMind'
                     cardInfo='lorem sddfgasfgasgfdsdgasdg'
-                    cardPreview='#'
+                    cardPreview='https://master.d2qc8p5wt78wrx.amplifyapp.com/'
                     cardCode='https://github.com/vincenzo2202/MasterMind-GH-project2'
                 />
                 <PortfolioCard
                     cardImage={videoconsola}
                     cardName='PSP Videoconsola'
                     cardInfo='lorem sddfgasfgasgfdsdgasdg'
-                    cardPreview='#'
+                    cardPreview='https://master.d3tfp2is3y78wg.amplifyapp.com/'
                     cardCode='https://github.com/vincenzo2202/Proyecto2GHVideoconsola'
                 />
                 <PortfolioCard
                     cardImage={gardenButcher}
                     cardName='Garden Butcher'
                     cardInfo='lorem sddfgasfgasgfdsdgasdg'
-                    cardPreview='#'
+                    cardPreview='https://master.d3291ewaz7nqgw.amplifyapp.com/'
                     cardCode='https://github.com/vincenzo2202/Project1GeeksHubsGardenButcher'
                 />
             </div>
