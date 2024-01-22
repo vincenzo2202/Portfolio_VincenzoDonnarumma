@@ -22,56 +22,56 @@ export const Portfolio = () => {
                 <PortfolioCard
                     cardImage={geekZone}
                     cardName='Geek Zone Frontend'
-                    cardInfo='lorem sddfgasfgasgfdsdgasdg'
+                    cardInfo='Frontend de una red social que actúa como campus virtual para un centro educativo.Tecnología: React.'
                     cardPreview='https://views.d6m2hk6zqt0er.amplifyapp.com/'
                     cardCode='https://github.com/vincenzo2202/geek-zone-GH-frontend'
                 />
                 <PortfolioCard
                     cardImage={diagramaGeekZone}
                     cardName='Geek Zone Backend'
-                    cardInfo='lorem sddfgasfgasgfdsdgasdg'
+                    cardInfo='Backend completo para una red social que actúa como campus virtual educativo.Tecnología: PHP y Laravel.'
                     cardPreview='#'
                     cardCode='https://github.com/vincenzo2202/geek-zone-GH-backend'
                 />
                 <PortfolioCard
                     cardImage={diagramaGameRoom}
                     cardName='Game Room'
-                    cardInfo='lorem sddfgasfgasgfdsdgasdg'
+                    cardInfo='Backend completo para una aplicación web, que permita formar grupos. Tecnología: PHP y Laravel. '
                     cardPreview='#'
                     cardCode='https://github.com/vincenzo2202/Project6-GameRoom'
                 />
                 <PortfolioCard
                     cardImage={malcriada}
                     cardName='Malcriada Tattoo Studio Frontend'
-                    cardInfo='lorem sddfgasfgasgfdsdgasdg'
+                    cardInfo='Frontend para un tienda de tatuajes con sistema de reservas. Tecnología: React. '
                     cardPreview='https://master.d9uttmtdayy6h.amplifyapp.com/'
                     cardCode='https://github.com/vincenzo2202/Tattoo-Studio-Frontend-'
                 />
                 <PortfolioCard
                     cardImage={diagramaMalcriada}
                     cardName='Malcriada Tattoo Studio Backend'
-                    cardInfo='lorem sddfgasfgasgfdsdgasdg'
+                    cardInfo='Backend para un tienda de tatuajes con sistema de reservas. Tecnología: Node.js, Express.js y TypeORM.'
                     cardPreview='#'
                     cardCode='https://github.com/vincenzo2202/Backend_tatto-studio_API_DB'
                 />
                 <PortfolioCard
                     cardImage={mastermind}
                     cardName='MasterMind'
-                    cardInfo='lorem sddfgasfgasgfdsdgasdg'
+                    cardInfo='Juego MasterMind es un juego de mesa de estrategia y lógica. Tecnología: JavaScript, HTML y CSS.'
                     cardPreview='https://master.d2qc8p5wt78wrx.amplifyapp.com/'
                     cardCode='https://github.com/vincenzo2202/MasterMind-GH-project2'
                 />
                 <PortfolioCard
                     cardImage={videoconsola}
                     cardName='PSP Videoconsola'
-                    cardInfo='lorem sddfgasfgasgfdsdgasdg'
+                    cardInfo='Representación de la mítica PlayStation PSP. Tecnología: JavaScript, HTML y CSS.'
                     cardPreview='https://master.d3tfp2is3y78wg.amplifyapp.com/'
                     cardCode='https://github.com/vincenzo2202/Proyecto2GHVideoconsola'
                 />
                 <PortfolioCard
                     cardImage={gardenButcher}
                     cardName='Garden Butcher'
-                    cardInfo='lorem sddfgasfgasgfdsdgasdg'
+                    cardInfo='Garden Butcher es una WEB para un restaurante Vegano. Tecnología: HTML y CSS.'
                     cardPreview='https://master.d3291ewaz7nqgw.amplifyapp.com/'
                     cardCode='https://github.com/vincenzo2202/Project1GeeksHubsGardenButcher'
                 />
