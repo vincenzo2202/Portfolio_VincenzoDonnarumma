@@ -23,6 +23,7 @@ export const Portfolio = () => {
     return (
         <div className="portfolio-body">
             <div className='title-box'>
+
             <div class="button" onClick={homeBtn}> 
                 <div class="button-box">
                     <span class="button-elem">
@@ -43,6 +44,7 @@ export const Portfolio = () => {
             </div>
             <div className="portfolio-title">PORTFOLIO</div>
             </div>
+            
             <div className="content-portfolio">
                 <PortfolioCard
                     cardImage={geekZone}

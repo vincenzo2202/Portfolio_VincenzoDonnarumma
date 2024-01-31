@@ -4,22 +4,17 @@
     display: flex; 
     align-items: center;
     flex-direction: column;
-}
-
-.title-box{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+} 
 
 .portfolio-title{
-    width: 100%;
-    height: 100%;
+    width: 8em;
+    height: 3em;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 2em;
-    padding: 1em;
+    /* padding: 1em; */
+
 
 }
 
@@ -30,9 +25,16 @@
     padding-bottom: 2em;
 }
 
+.title-box{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);  
+  justify-content: center;
+  align-items: center;    
+}
+
 .button {
     display: block;
-    position: absolute;
+    position: relative;
     z-index: 1;
     width: 56px;
     height: 56px;
@@ -42,7 +44,7 @@
     background-color: transparent;
     cursor: pointer;
     border: 0; 
-    left: 15em;
+    left: -15em ;
   }
   
   .button:before,
