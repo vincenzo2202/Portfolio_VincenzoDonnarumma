@@ -12,7 +12,8 @@ import {
     FaGitAlt,
     FaGithub,
     FaDocker,
-    FaAws
+    FaAws,
+    FaSymfony
 } from 'react-icons/fa';
 import { SiTypescript, SiRedux, SiExpress, SiMongodb, SiPostman } from 'react-icons/si';
 import { DiMysql } from 'react-icons/di';
@@ -164,6 +165,9 @@ export const Home = () => {
                                     </li>
                                     <li className='contentTechnologiesSectionListElement'>
                                         <FaLaravel className='contentTechnologiesSectionListElementIcon' /> <span>Laravel</span>
+                                    </li>
+                                    <li className='contentTechnologiesSectionListElement'>
+                                        <FaSymfony className='contentTechnologiesSectionListElementIcon' /> <span>Symfony</span>
                                     </li>
                                 </ul>
                             </div>

@@ -1,6 +1,6 @@
 import { PortfolioCard } from '../../common/PortfolioCard/PortfolioCard';
 import './Portfolio.css'
-
+ 
 import geekZone from '../../assets/geekzone.png'
 import diagramaGeekZone from '../../assets/diagrama-geekzone.png'
 import diagramaGameRoom from '../../assets/diagrama-gameroom.jpeg'
@@ -46,6 +46,13 @@ export const Portfolio = () => {
             </div>
             
             <div className="content-portfolio">
+                <PortfolioCard
+                    cardImage={'https://raw.githubusercontent.com/vincenzo2202/Quasar-Dynamics-Technical-Assessment/master/assets/RE.png'}
+                    cardName='API NOTES'
+                    cardInfo='Backend de una API para el registro de notas. Tecnología: PHP y Symfony.'
+                    cardPreview='#'
+                    cardCode='https://github.com/vincenzo2202/Quasar-Dynamics-Technical-Assessment?tab=readme-ov-file'
+                />
                 <PortfolioCard
                     cardImage={geekZone}
                     cardName='Geek Zone Frontend'
