@@ -34,6 +34,7 @@ import mastermind from '../../assets/mastermind.png';
 import videoconsola from '../../assets/videoconsola.png';
 import geekzone from '../../assets/geekzone.png';
 import { useNavigate } from 'react-router-dom';
+import cv from '../../assets/CV_VINCENZO_DONNARUMMA.pdf';
 
 export const Home = () => {
 
@@ -202,7 +203,7 @@ export const Home = () => {
             <div className='contact'>
                 <div className='message'>¡Hagamos algo genial!</div>
                 <div className="Download-button">
-                    <a className="Download-link" href="/src/assets/CV_VINCENZO_DONNARUMMA.pdf" target="_blank" rel="noopener noreferrer" >
+                    <a className="Download-link" href={cv} target="_blank" rel="noopener noreferrer">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             height="16"
