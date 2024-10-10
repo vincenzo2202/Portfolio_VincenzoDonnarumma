@@ -32,7 +32,7 @@ import linkedIn from '../../assets/LnkdIn.png';
 import malcriada from '../../assets/malcriada.png';
 import mastermind from '../../assets/mastermind.png';
 import videoconsola from '../../assets/videoconsola.png';
-import geekzone from '../../assets/geekzone.png'; 
+import geekzone from '../../assets/geekzone.png';
 import { useNavigate } from 'react-router-dom';
 
 export const Home = () => {
@@ -47,15 +47,17 @@ export const Home = () => {
         }
     };
 
-    const portfolioBtn = ()=>{
-       return navigate('/portfolio');
+    const portfolioBtn = () => {
+        return navigate('/portfolio');
     }
 
     return (
         <>
             <div className='home-body'>
                 <div className='title-home'>
-                    <div draggable='true'><img className='home-image' src={image} alt='home' />  </div>
+                    <div draggable='true'>
+                        <img className='home-image' src={image} alt='home' />
+                    </div>
                     <div className='title-name'>Vincenzo Donnarumma</div>
                     <div className='button-home' onClick={() => handleScrollToSection(about)}>DESCUBRE MÁS</div>
                 </div>
@@ -199,8 +201,8 @@ export const Home = () => {
             </div>
             <div className='contact'>
                 <div className='message'>¡Hagamos algo genial!</div>
-                <div class="Download-button">
-                    <a class="Download-link" href='https://drive.google.com/file/d/1xd8idaQxsZzL4Yie7RRXtavo9VP06EZ2/view?usp=drive_link' target='_blank' rel='noopener noreferrer'>
+                <div className="Download-button">
+                    <a className="Download-link" href="/src/assets/CV_VINCENZO_DONNARUMMA.pdf" target="_blank" rel="noopener noreferrer" >
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             height="16"
@@ -212,7 +214,7 @@ export const Home = () => {
                                 fill="white"
                             ></path>
                         </svg>
-                        <div className='cv-text'>Descargar CV</div>
+                        <div className="cv-text">Descargar CV</div>
                     </a>
                 </div>
                 <div className='box-contact'>
