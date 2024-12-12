@@ -18,7 +18,8 @@
 }
 
 .stack-container {
-    transform: scale(1.55);
+    transform: scale(1.3);
+    margin-top: -2em;
 }
 
 .title {

@@ -13,7 +13,8 @@ import {
     FaGithub,
     FaDocker,
     FaAws,
-    FaSymfony
+    FaSymfony,
+    FaAngular
 } from 'react-icons/fa';
 import { SiTypescript, SiRedux, SiExpress, SiMongodb, SiPostman } from 'react-icons/si';
 import { DiMysql } from 'react-icons/di';
@@ -70,13 +71,19 @@ export const Home = () => {
                     <div className='button-about' onClick={() => handleScrollToSection(projects)} >MIRA LO QUE HE HECHO</div>
                 </div>
                 <div className='right-box'>
-                    <div className='info-about'> Soy Vincenzo Donnarumma, y comencé mi viaje en la programación en 2023. Durante el último año, me he sumergido en el aprendizaje autodidacta y para dar un impulso a mi carrera, realicé mi formación en el bootcamp de Desarrollo Full Stack en GeeksHubs Academy, graduándome en diciembre de 2023.
+                    <div className='info-about'>
+                        Soy Vincenzo Donnarumma y comencé mi camino en la programación en 2023. Tras un año de aprendizaje autodidacta, completé el bootcamp de Desarrollo Full Stack en GeeksHubs Academy en diciembre de 2023.
                         <br />
                         <br />
-                        Además de mi pasión por la tecnología, también he adquirido conocimientos en marketing digital, fusionando así dos mundos afines. Disfruto de la interacción social y los desafíos emprendedores.
+                        He trabajado como backend developer creando aplicaciones completas, desde el diseño de bases de datos hasta la implementación de APIs y servicios externos, asegurando siempre eficiencia, seguridad y escalabilidad.
                         <br />
                         <br />
-                        ¡Gracias por pasar por aquí! Espero que disfrutes lo que encuentres. Si tienes alguna pregunta o simplemente quieres charlar, ¡estaré encantado de escucharte! </div>
+                        Además, cuento con conocimientos en marketing digital, lo que me permite combinar tecnología y estrategia.
+                        <br />
+                        <br />
+                        ¡Gracias por visitar mi perfil! Estoy encantado de responder preguntas o simplemente charlar.
+
+                    </div>
 
                 </div>
             </div>
@@ -108,7 +115,7 @@ export const Home = () => {
                 </div>
                 <div className='see-more'>
                     <div class='shadow__btn' onClick={portfolioBtn} >
-                        VER TODOS
+                        MÁS PROYECTOS
                     </div>
                 </div>
             </div>
@@ -122,13 +129,16 @@ export const Home = () => {
                                 <div className='contentTechnologiesSectionTitle'>FRONTEND</div>
                                 <ul className='contentTechnologiesSectionList'>
                                     <li className='contentTechnologiesSectionListElement'>
+                                        <FaReact className='contentTechnologiesSectionListElementIcon' /> <span>React</span>
+                                    </li>
+                                    <li className='contentTechnologiesSectionListElement'>
+                                        <FaAngular className='contentTechnologiesSectionListElementIcon' /> <span>Angular</span>
+                                    </li>
+                                    <li className='contentTechnologiesSectionListElement'>
                                         <FaHtml5 className='contentTechnologiesSectionListElementIcon' /> <span>HTML</span>
                                     </li>
                                     <li className='contentTechnologiesSectionListElement'>
                                         <FaCss3 className='contentTechnologiesSectionListElementIcon' /> <span>CSS</span>
-                                    </li>
-                                    <li className='contentTechnologiesSectionListElement'>
-                                        <FaBootstrap className='contentTechnologiesSectionListElementIcon' /> <span>Bootstrap</span>
                                     </li>
                                     <li className='contentTechnologiesSectionListElement'>
                                         <IoLogoJavascript className='contentTechnologiesSectionListElementIcon' /> <span>JavaScript</span>
@@ -137,10 +147,7 @@ export const Home = () => {
                                         <SiTypescript className='contentTechnologiesSectionListElementIcon' /> <span>TypeScript</span>
                                     </li>
                                     <li className='contentTechnologiesSectionListElement'>
-                                        <FaReact className='contentTechnologiesSectionListElementIcon' /> <span>React</span>
-                                    </li>
-                                    <li className='contentTechnologiesSectionListElement'>
-                                        <SiRedux className='contentTechnologiesSectionListElementIcon' /> <span>Redux</span>
+                                        <FaBootstrap className='contentTechnologiesSectionListElementIcon' /> <span>Bootstrap</span>
                                     </li>
                                 </ul>
                             </div>
@@ -148,21 +155,6 @@ export const Home = () => {
                             <div className='contentTechnologiesSection'>
                                 <div className='contentTechnologiesSectionTitle'>BACKEND</div>
                                 <ul className='contentTechnologiesSectionList'>
-                                    <li className='contentTechnologiesSectionListElement'>
-                                        <FaNode className='contentTechnologiesSectionListElementIcon' /> <span>Node.js</span>
-                                    </li>
-                                    <li className='contentTechnologiesSectionListElement'>
-                                        <SiExpress className='contentTechnologiesSectionListElementIcon' /> <span>Express</span>
-                                    </li>
-                                    <li className='contentTechnologiesSectionListElement'>
-                                        <SiMongodb className='contentTechnologiesSectionListElementIcon' /> <span>MongoDB</span>
-                                    </li>
-                                    <li className='contentTechnologiesSectionListElement'>
-                                        <DiMysql className='contentTechnologiesSectionListElementIcon' /> <span>MySQL</span>
-                                    </li>
-                                    <li className='contentTechnologiesSectionListElement'>
-                                        <PiFileSqlDuotone className='contentTechnologiesSectionListElementIcon' /> <span>SQL</span>
-                                    </li>
                                     <li className='contentTechnologiesSectionListElement'>
                                         <FaPhp className='contentTechnologiesSectionListElementIcon' /> <span>PHP</span>
                                     </li>
@@ -172,6 +164,19 @@ export const Home = () => {
                                     <li className='contentTechnologiesSectionListElement'>
                                         <FaSymfony className='contentTechnologiesSectionListElementIcon' /> <span>Symfony</span>
                                     </li>
+                                    <li className='contentTechnologiesSectionListElement'>
+                                        <FaNode className='contentTechnologiesSectionListElementIcon' /> <span>Node.js</span>
+                                    </li>
+                                    <li className='contentTechnologiesSectionListElement'>
+                                        <SiExpress className='contentTechnologiesSectionListElementIcon' /> <span>Express</span>
+                                    </li>
+                                    <li className='contentTechnologiesSectionListElement'>
+                                        <PiFileSqlDuotone className='contentTechnologiesSectionListElementIcon' /> <span>SQL</span>
+                                    </li>
+                                    <li className='contentTechnologiesSectionListElement'>
+                                        <SiMongodb className='contentTechnologiesSectionListElementIcon' /> <span>MongoDB</span>
+                                    </li>
+
                                 </ul>
                             </div>
                             <hr />
@@ -221,10 +226,10 @@ export const Home = () => {
                 <div className='box-contact'>
                     <div className='left-contact'>
                         <div className='contact-title'>CONTACTO</div>
-                        <div className='email-title'>Email:</div>
-                        <div className='email' draggable='false'>vincenzodonnarumma22@gmail.com</div>
-                        <div className='phone-title'>Teléfono:</div>
-                        <div className='phone'>+34 722-760-606</div>
+                        <div className='email-title'>Correo:</div>
+                        <div className='email'>
+                            <a href='mailto:vincenzodonnarumma22@gmail.com'>vincenzodonnarumma22@gmail.com</a>
+                        </div>
                     </div>
                     <div className='right-contact'>
                         <div className='seguir-title'>SEGUIR</div>

@@ -6,19 +6,19 @@
      background-color: #1B1F24;
      display: flex;
      justify-content: center;
-     align-items: center; 
+     align-items: center;
  }
 
  .left-box,
  .right-box {
      width: 40em;
-     margin-left: 7em; 
-     margin-right: 7em; 
+     margin-left: 7em;
+     margin-right: 7em;
  }
 
  .left-box {
      position: relative;
-     left:  5em;
+     left: 5em;
  }
 
  .right-box {
@@ -40,13 +40,14 @@
  .info-about {
      text-align: justify;
      font-size: 1.3em;
-     min-width: 20em;  
+     width: 30em;
+     min-width: 20em;
  }
 
  .button-about {
      display: flex;
      position: relative;
-     top: 3em;
+     top: 2em;
      width: 12em;
      padding: 0.5em;
      background-color: white;
@@ -54,49 +55,51 @@
      color: black;
      font-size: 1.5em;
      cursor: pointer;
+     border-radius: 10px;
  }
 
  .button-about:hover {
-     transform: scale(1.03);
+     background-color: #d8d8d8;
+     transition: 0.2s;
+     box-shadow: 0.1em 0.1em 0.5em rgb(163, 162, 162);
  }
 
  .button-about:active {
-     transform: scale(0.95);
+     background-color: #4a4a4a;
+     transition: 0.2s;
  }
 
  @media screen and (max-width: 768px) {
-    .about-me {  
-        z-index: -1;
-        background-color: #1B1F24;
-        display: flex;     
-        justify-content: center;
-        flex-direction: column; 
-        font-size: 0.9em;
-        margin-top: -1em;
-    } 
+     .about-me {
+         z-index: -1;
+         background-color: #1B1F24;
+         display: flex;
+         justify-content: center;
+         flex-direction: column;
+         font-size: 0.9em;
+         margin-top: -1em;
+     }
 
-    .saludo-about {
-        font-size: 2em;
-        text-align: left; 
-        margin-left: 1.5em;
-    }
+     .saludo-about {
+         font-size: 2em;
+         text-align: left;
+         margin-left: 1.5em;
+     }
 
-    .title-about {
-        font-size: 4em;
-        width: 7em;
-        text-align: left;
-        margin-left: 0.7em;
-    }
+     .title-about {
+         font-size: 4em;
+         width: 7em;
+         text-align: left;
+         margin-left: 0.7em;
+     }
 
-    .button-about {
-        position: relative;
-     margin-left: 3.8em; 
-    }
+     .button-about {
+         position: relative;
+         margin-left: 3.8em;
+     }
 
-    .info-about { 
-       display: none;
-    }
- 
- } 
+     .info-about {
+         display: none;
+     }
 
- 
+ }

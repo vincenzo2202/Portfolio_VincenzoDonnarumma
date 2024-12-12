@@ -1,6 +1,6 @@
 import { PortfolioCard } from '../../common/PortfolioCard/PortfolioCard';
 import './Portfolio.css'
- 
+
 import geekZone from '../../assets/geekzone.png'
 import diagramaGeekZone from '../../assets/diagrama-geekzone.png'
 import diagramaGameRoom from '../../assets/diagrama-gameroom.jpeg'
@@ -15,37 +15,44 @@ import { useNavigate } from 'react-router-dom';
 export const Portfolio = () => {
     const navigate = useNavigate()
 
-    const homeBtn = ()=>{
+    const homeBtn = () => {
         return navigate('/');
-     }
+    }
 
 
     return (
         <div className="portfolio-body">
             <div className='title-box'>
 
-            <div class="button" onClick={homeBtn}> 
-                <div class="button-box">
-                    <span class="button-elem">
-                        <svg viewBox="0 0 46 40" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M46 20.038c0-.7-.3-1.5-.8-2.1l-16-17c-1.1-1-3.2-1.4-4.4-.3-1.2 1.1-1.2 3.3 0 4.4l11.3 11.9H3c-1.7 0-3 1.3-3 3s1.3 3 3 3h33.1l-11.3 11.9c-1 1-1.2 3.3 0 4.4 1.2 1.1 3.3.8 4.4-.3l16-17c.5-.5.8-1.1.8-1.9z"
-                            ></path>
-                        </svg>
-                    </span>
-                    <span class="button-elem">
-                        <svg viewBox="0 0 46 40">
-                            <path
-                                d="M46 20.038c0-.7-.3-1.5-.8-2.1l-16-17c-1.1-1-3.2-1.4-4.4-.3-1.2 1.1-1.2 3.3 0 4.4l11.3 11.9H3c-1.7 0-3 1.3-3 3s1.3 3 3 3h33.1l-11.3 11.9c-1 1-1.2 3.3 0 4.4 1.2 1.1 3.3.8 4.4-.3l16-17c.5-.5.8-1.1.8-1.9z"
-                            ></path>
-                        </svg>
-                    </span>
+                <div class="button" onClick={homeBtn}>
+                    <div class="button-box">
+                        <span class="button-elem">
+                            <svg viewBox="0 0 46 40" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M46 20.038c0-.7-.3-1.5-.8-2.1l-16-17c-1.1-1-3.2-1.4-4.4-.3-1.2 1.1-1.2 3.3 0 4.4l11.3 11.9H3c-1.7 0-3 1.3-3 3s1.3 3 3 3h33.1l-11.3 11.9c-1 1-1.2 3.3 0 4.4 1.2 1.1 3.3.8 4.4-.3l16-17c.5-.5.8-1.1.8-1.9z"
+                                ></path>
+                            </svg>
+                        </span>
+                        <span class="button-elem">
+                            <svg viewBox="0 0 46 40">
+                                <path
+                                    d="M46 20.038c0-.7-.3-1.5-.8-2.1l-16-17c-1.1-1-3.2-1.4-4.4-.3-1.2 1.1-1.2 3.3 0 4.4l11.3 11.9H3c-1.7 0-3 1.3-3 3s1.3 3 3 3h33.1l-11.3 11.9c-1 1-1.2 3.3 0 4.4 1.2 1.1 3.3.8 4.4-.3l16-17c.5-.5.8-1.1.8-1.9z"
+                                ></path>
+                            </svg>
+                        </span>
+                    </div>
                 </div>
+                <div className="portfolio-title">PORTFOLIO</div>
             </div>
-            <div className="portfolio-title">PORTFOLIO</div>
-            </div>
-            
+
             <div className="content-portfolio">
+                <PortfolioCard
+                    cardImage={'https://raw.githubusercontent.com/vincenzo2202/movieFinder/refs/heads/main/public/assets/captura5.png'}
+                    cardName='Movie Finder'
+                    cardInfo='Aplicación web para buscar películas. Tecnología: Angular.'
+                    cardPreview='https://main.d2vjyg47loas9v.amplifyapp.com/landing'
+                    cardCode='https://github.com/vincenzo2202/movieFinder'
+                />
                 <PortfolioCard
                     cardImage={'https://raw.githubusercontent.com/vincenzo2202/Quasar-Dynamics-Technical-Assessment/master/assets/RE.png'}
                     cardName='API NOTES'
