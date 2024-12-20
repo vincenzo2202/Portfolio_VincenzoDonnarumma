@@ -38,7 +38,7 @@ import { useNavigate } from 'react-router-dom';
 import cv from '../../assets/CV_VINCENZO_DONNARUMMA.pdf';
 
 export const Home = () => {
-
+    // 
     const about = useRef(null);
     const projects = useRef(null);
     const navigate = useNavigate()
