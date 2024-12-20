@@ -47,6 +47,13 @@ export const Portfolio = () => {
 
             <div className="content-portfolio">
                 <PortfolioCard
+                    cardImage={'https://raw.githubusercontent.com/vincenzo2202/libraryApp/LA-BE-001-Production/public/uploads/images/diagrama.png'}
+                    cardName='Library App'
+                    cardInfo='Aplicación web para gestionar una biblioteca y llevar estadísticas de valor y estado. Tecnología: PHP / Symfony.'
+                    cardPreview='#'
+                    cardCode='https://github.com/vincenzo2202/libraryApp'
+                />
+                <PortfolioCard
                     cardImage={'https://raw.githubusercontent.com/vincenzo2202/movieFinder/refs/heads/main/public/assets/captura5.png'}
                     cardName='Movie Finder'
                     cardInfo='Aplicación web para buscar películas. Tecnología: Angular.'
@@ -54,9 +61,16 @@ export const Portfolio = () => {
                     cardCode='https://github.com/vincenzo2202/movieFinder'
                 />
                 <PortfolioCard
+                    cardImage={'https://raw.githubusercontent.com/vincenzo2202/todo-app/refs/heads/main/public/todo.png'}
+                    cardName='TO DO APP'
+                    cardInfo='Aplicación web para crear anotaciones. Tecnología: Angular.'
+                    cardPreview='https://dev.ds9lugilmnvn7.amplifyapp.com/'
+                    cardCode='https://github.com/vincenzo2202/todo-app'
+                />
+                <PortfolioCard
                     cardImage={'https://raw.githubusercontent.com/vincenzo2202/Quasar-Dynamics-Technical-Assessment/master/assets/RE.png'}
                     cardName='API NOTES'
-                    cardInfo='Backend de una API para el registro de notas. Tecnología: PHP y Symfony.'
+                    cardInfo='Backend de una API para el registro de notas. Tecnología: PHP / Symfony.'
                     cardPreview='#'
                     cardCode='https://github.com/vincenzo2202/Quasar-Dynamics-Technical-Assessment?tab=readme-ov-file'
                 />
@@ -70,14 +84,14 @@ export const Portfolio = () => {
                 <PortfolioCard
                     cardImage={diagramaGeekZone}
                     cardName='Geek Zone Backend'
-                    cardInfo='Backend completo para una red social que actúa como campus virtual educativo.Tecnología: PHP y Laravel.'
+                    cardInfo='Backend completo para una red social que actúa como campus virtual educativo.Tecnología: PHP / Laravel.'
                     cardPreview='#'
                     cardCode='https://github.com/vincenzo2202/geek-zone-GH-backend'
                 />
                 <PortfolioCard
                     cardImage={diagramaGameRoom}
                     cardName='Game Room'
-                    cardInfo='Backend completo para una aplicación web, que permita formar grupos. Tecnología: PHP y Laravel. '
+                    cardInfo='Backend completo para una aplicación web, que permita formar grupos. Tecnología: PHP / Laravel. '
                     cardPreview='#'
                     cardCode='https://github.com/vincenzo2202/Project6-GameRoom'
                 />
