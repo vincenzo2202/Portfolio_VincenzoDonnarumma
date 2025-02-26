@@ -303,7 +303,7 @@ export const Home = () => {
                             <div class="wave"></div>
                             <div class="wave"></div>
                             <div class="infotop">
-                                <img className='e-card-img white-icon' src={certificate} alt="certificate" class="icon white-icon" /><br />
+                                <img className='e-card-img' src={certificate} alt="certificate" /><br />
                                 Full Stack Developer
                                 <br />
                                 <div class="name">GeekHubs Academy</div>
@@ -316,7 +316,7 @@ export const Home = () => {
                             <div class="wave"></div>
                             <div class="wave"></div>
                             <div class="infotop">
-                                <img className='e-card-img white-icon' src={certificate} alt="certificate" class="icon white-icon" /><br />
+                                <img className='e-card-img' src={certificate} alt="certificate" /><br />
                                 MBA Marketing Digital
                                 <br />
                                 <div class="name">The Power Business School</div>
@@ -329,7 +329,7 @@ export const Home = () => {
                             <div class="wave"></div>
                             <div class="wave"></div>
                             <div class="infotop">
-                                <img className='e-card-img white-icon' src={degree} alt="certificate" class="icon white-icon" /><br />
+                                <img className='e-card-img' src={degree} alt="certificate" /><br />
                                 Técnico Superior en Administración y Finanzas
                                 <br />
                                 <div class="name">IES Conselleria</div>
