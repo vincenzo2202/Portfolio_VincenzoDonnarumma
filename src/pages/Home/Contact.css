@@ -1,40 +1,41 @@
 .contact {
-    width: 100vw;
     height: 100vh;
-    object-fit: cover;
     z-index: -1;
     background-color: #1B1F24;
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding-top: 2em;
 }
 
 .message {
-    font-size: 4em; 
-    position: relative;
+    width: 100vw;
+    font-size: 4em;
 }
 
 .box-contact {
     display: flex;
-    height: 20em;
     width: 60em;
+    padding-top: 0.5em;
 }
 
 .left-contact {
-    color: black;
+    color: rgb(0, 0, 0);
     width: 25em;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     padding: 1em;
+    padding-top: 0;
     text-align: left;
     font-size: 1.2em;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .right-contact {
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     width: 25em;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     padding: 1em;
     text-align: left;
     font-size: 1.2em;
@@ -45,9 +46,8 @@
     font-size: 3em;
     display: flex;
     justify-content: flex-start;
-    margin-bottom: 0.5em;
+    /* margin-bottom: 0.5em; */
     font-weight: 700;
-
 }
 
 .email-title,
@@ -72,40 +72,50 @@
     user-select: text;
 }
 
-.github {
-    filter: hue-rotate(180deg);
+.github,
+.linkedIn,
+.email {
     height: 2em;
-    padding-top: 1em;
-    margin-left: 0.5em;
     display: flex;
+    align-items: center;
     cursor: pointer;
+    margin-top: 1em;
+    margin-left: 0.5em;
 }
 
-.github-title {
-    margin-top: 0.9em;
+.github-title,
+.linkedIn-title,
+.email-title {
     margin-left: 0.5em;
     font-size: 1.2em;
     color: white;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 0.9em;
 }
 
-.linkedIn {
-    margin-top: 1.6em;
-    margin-left: 0.5em;
-    height: 2em;
+.social {
     display: flex;
-    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    gap: 4em;
 }
 
-.linkedIn-title {
-    margin-top: 1.3em;
-    margin-left: 0.5em;
-    font-size: 1.2em;
+.Download-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.Download-link:hover {
     color: white;
 }
 
 .Download-button {
     display: flex;
     align-items: center;
+    justify-content: center;
     font-family: inherit;
     font-weight: 500;
     font-size: 17px;
@@ -118,19 +128,10 @@
     border-radius: 8px;
     cursor: pointer;
     position: relative;
-    margin-bottom: 3em; 
-    margin-top: 3em;
-}
-
-.Download-link{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-}
-
-.Download-link:hover{
-    color: white;
+    top: 6em;
+    right: -6em;
+    width: 50%;
+    animation: shadowPulse 2s infinite;
 }
 
 .Download-button svg {
@@ -138,56 +139,65 @@
     width: 25px;
 }
 
-.Download-button:hover {
-    box-shadow: 0 0.5em 1.5em -0.5em rgba(88, 71, 116, 0.627);
+@keyframes shadowPulse {
+
+    0%,
+    100% {
+        box-shadow: 0 0.5em 1.5em -0.5em rgba(88, 71, 116, 0.627);
+    }
+
+    50% {
+        box-shadow: 0 0.7em 1.5em -0.5em rgba(59, 48, 78, 0.527);
+    }
 }
 
-.Download-button:active {
-    box-shadow: 0 0.3em 1em -0.5em rgba(88, 71, 116, 0.627);
-}
-
-.Download-button::before {
-    content: "";
-    width: 4px;
-    height: 40%;
-    background-color: white;
-    position: absolute;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    left: 0;
-    transition: all 0.2s;
-}
-
+.Download-button::before,
 .Download-button::after {
     content: "";
     width: 4px;
     height: 40%;
     background-color: white;
     position: absolute;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-    right: 0;
+    border-radius: 5px;
     transition: all 0.2s;
 }
 
-.Download-button:hover::before,
-.Download-button:hover::after {
-    height: 60%;
+.Download-button::before {
+    left: 0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    animation: heightPulse 2s infinite;
 }
 
+.Download-button::after {
+    right: 0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    animation: heightPulse 2s infinite;
+}
+
+@keyframes heightPulse {
+
+    0%,
+    100% {
+        height: 40%;
+    }
+
+    50% {
+        height: 60%;
+    }
+}
 
 @media screen and (max-width: 768px) {
-
     .box-contact {
-        transform: scale(0.6);
+        transform: scale(0.8);
         flex-direction: column;
         justify-content: center;
-        align-items: center; 
+        align-items: center;
     }
 
     .left-contact {
         height: 30em;
-
     }
 
     .right-contact {
@@ -196,14 +206,201 @@
     }
 
     .message {
-        /* margin-top: -1em; */
         margin-bottom: 1.5em;
         font-size: 3em;
     }
-    
-    .Download-button{
-        z-index: 1;   
+
+    .Download-button {
+        z-index: 1;
         margin-top: -2em;
     }
- 
+
+    /* form */
+
+    .form {
+        position: relative;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 10px;
+        width: 300px;
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 30px 30px -30px rgba(27, 26, 26, 0.315);
+    }
+
+    .form .contact-title {
+        color: royalblue;
+        font-size: 30px;
+        font-weight: 600;
+        letter-spacing: -1px;
+        line-height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .form input {
+        outline: 0;
+        border: 1px solid rgb(219, 213, 213);
+        padding: 8px 14px;
+        border-radius: 8px;
+        width: 100%;
+        height: 50px;
+    }
+
+    .form textarea {
+        border-radius: 8px;
+        height: 100px;
+        width: 100%;
+        resize: none;
+        outline: 0;
+        padding: 8px 14px;
+        border: 1px solid rgb(219, 213, 213);
+    }
+
+    .form button {
+        align-self: flex-end;
+        padding: 8px;
+        outline: 0;
+        border: 0;
+        border-radius: 8px;
+        font-size: 16px;
+        font-weight: 500;
+        background-color: royalblue;
+        color: #fff;
+        cursor: pointer;
+    }
+
+}
+
+/* From Uiverse.io by ClawHack1 */
+.contact-form {
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-form label {
+    color: black;
+}
+
+.contact-form .heading {
+    font-size: 24px;
+    color: black;
+    margin-bottom: 12px;
+    font-weight: bold;
+    display: block;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-bottom: 10px;
+}
+
+textarea {
+    resize: none;
+    height: 80px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-color: #d0d0d0;
+    /* mismo width para los dos */
+    width: 100%;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    box-shadow: 0 0 5px #ff6384;
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+.contact-form button[type="submit"] {
+    background-color: #ff6384;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contact-form button[type="submit"]:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* social */
+
+.container-social {
+    position: relative;
+    width: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    top: 2em;
+    gap: 2em;
+
+}
+
+.container-social button {
+    width: 70px;
+    height: 70px;
+    border: none;
+    background-color: #313638;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.container-social button:focus {
+    outline: none;
+}
+
+.icon {
+    width: 46px;
+    height: 46px;
+    fill: #fff;
+    position: relative;
+    top: 40%;
+    left: -70%;
+
+}
+
+.container-social button:nth-child(1):hover {
+    background-color: #2753a7;
+}
+
+.container-social button:nth-child(2):hover {
+    background-color: #cd242b;
+}
+
+.container-social button:nth-child(3):hover {
+    background-color: #55acee;
+}
+
+.container-social button:nth-child(4):hover {
+    background-color: #0274b3;
+}
+
+.title {
+    color: gray;
+    font-weight: 700;
+    font-size: 17px;
+    position: absolute;
+    left: 0;
 }

@@ -24,6 +24,7 @@
   padding: 25px;
   justify-content: center;
   align-items: center;
+  max-width: 50%;
 }
 
 .title-box {
